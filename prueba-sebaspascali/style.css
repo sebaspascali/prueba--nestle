@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Fredoka One', cursive;
+    font-weight: lighter;
+}
+
+.container {
+    background-color: #8dd1ea;
+    max-width: 992px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.icons {
+    height: 56px;
+    display: flex;
+    justify-content: end;
+    align-items: center;   
+    padding: 11px;
+}
+.icons ul{
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+.icons ul li img{
+    width: 22px;
+    height: 22px;
+}
+
+.redes-text {
+    font-weight: 700;
+    color: #006d99;
+    font-size: 15px;
+    margin-right: 8px;
+    height: 24px;
+}
+.image{
+    background-color: #f0f5f8 ;
+    text-align: right;
+    height: 322px;
+    position: relative;
+}
+.image-text{
+    width: 320px;
+    height: 160px;
+    text-align: left;
+    color: #006d99;
+    font-size: 28px;
+    position: absolute;
+    z-index: 1;
+    top: 17px;
+    left: 17px;
+}
+.image-background{
+    position: absolute;
+    right: 0;
+}
+.image-bird{
+    width: 310px;
+    position: absolute;
+    bottom: -65px;
+    left: 0;
+    z-index: 20; 
+}
+
+.redes {
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+}
+
+.description{
+    color: white;
+    width: 90%;
+    margin: 72px 0 0 22px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.description span {
+    font-weight: 900;
+}
+
+.butterfly-container{
+    position: relative;
+}
+.butterfly{
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.cards {
+    display: grid;
+    justify-items: center;
+    justify-content: end;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    width: 400px;
+    margin: 87px auto 77px;
+}
+.card {
+    width: 233px;
+    height: 300px;
+    border-radius: 15px;
+    padding-top: 9px;
+    background: rgb(219,219,219);
+    background: linear-gradient(0deg, #dad9d9 0%, #ffffff 15%);
+    position: relative;
+}
+.card-product{
+    display: block;
+    margin: 0 auto;
+    height: 148px;
+}
+.card-text{
+    color: #666666;
+    font-size: 13px;
+    margin: 10px 10px 0 17px;
+    line-height: 20px;
+}
+.card-text span{
+    /* font-weight: bold; */
+    font-size: 42px;
+    
+}
+
+.line{
+    position: absolute;
+    bottom: 55px;
+    border-top: 1px solid #e1dddd;
+    width: 100%;
+}
+.view{
+    border: 3px solid white;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background-color: #dd5f8c;
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+}
+.btn-container{
+    text-align: center;
+}
+.moreBtn{
+    background-color: #dd5f8c;
+    color: white;
+    border: 3px solid white;
+    width: 210px;
+    height: 54px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.note{
+    background-color: white;
+    color: #006d99;
+    font-size: 15px;
+    margin: 0 0 20px 17px;
+}
+
+.waves{
+    height: 140px;
+    background-image: url('./img/decorations/waves.svg');
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    background-color: white;
+}
+.logo-container{    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 160px;
+    padding: 0 20px 30px;
+}
+.logo-nestle{
+    width: 154px;
+}
+.logo-nestle-bebe{
+    width: 156px;
+}
+@media (min-width: 540px ){
+    .cards {
+        display: grid;
+        justify-content: end;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        width: 502px;
+        margin: 87px auto 77px;
+    }
+    .waves{
+        bottom: 210px;
+    }
+    .image-text{
+        width: 171px;
+        left: 34px;
+    }
+    .image-bird{
+        left: 47px;
+    }
+}
+@media (min-width: 547px ){
+    .waves{
+        bottom: 190px;
+    }
+}
+@media (min-width: 768px ){
+    .cards {
+        display: grid;
+
+        justify-content: end;
+        grid-template-columns:  1fr 1fr;
+        gap: 32px;
+        width: 100%;
+        margin: 87px auto 77px;
+    }
+    .image-text{
+        left: 54px;
+    }
+    .image-bird{
+        left: 77px;
+    }
+}
